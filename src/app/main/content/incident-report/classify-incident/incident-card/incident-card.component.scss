@@ -1,0 +1,17 @@
+.inc-card {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 5px var(--bs-primary);
+    .inc-card-header {
+        background-color: var(--bs-white);
+        border-bottom-color: rgba(0, 0, 0, 0.1);
+        border-bottom-style: dashed;
+        border-bottom-width: 2pt;
+    }
+    .inc-card-footer {
+        border-top-color: rgba(0, 0, 0, 0.1);
+        border-top-style: dashed;
+        border-top-width: 2pt;
+        background-color: var(--bs-white);
+    }
+}

@@ -1,0 +1,23 @@
+.main-body {
+    min-height: 100vh;
+
+    .sidebar {
+        width: var(--sidebar-width);
+    }
+
+    .main-stream{
+        width: calc(100vw - var(--sidebar-width));
+    }
+}
+
+.collapsed-sidebar {
+    min-height: 100vh;
+  
+    .sidebar {
+        width: var(--sidebar-collapsed-width);
+    }
+
+    .main-stream{
+        width: calc(100vw - var(--sidebar-collapsed-width));
+    }
+}

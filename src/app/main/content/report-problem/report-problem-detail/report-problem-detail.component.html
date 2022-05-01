@@ -1,0 +1,46 @@
+<div class="badge bg-light text-muted text-uppercase">
+    Lịch sử báo cáo sự cố > [trạng thái] >
+    <span class="text-primary">
+        Id: 00001
+    </span>
+</div>
+
+<div class="py-4 text-uppercase nav-btn-group">
+    <button type="button" class="btn btn-primary">
+        Tạo báo cáo
+    </button>
+    <button type="button" class="btn btn-outline-primary">
+        Chỉnh sửa
+    </button>
+    <button type="button" class="btn btn-outline-danger">
+        Xóa
+    </button>
+    <button type="button" class="btn btn-outline-secondary">
+        Chỉnh sửa phiếu
+    </button>
+
+    <!-- #region Thông tin người tạo -->
+    <span class="author-detail">
+        <img class="img-avatar my-auto me-2" src="./assets/images/avatar.png" alt="">
+        <span class="">
+            <small class="d-block my-auto">Tạo bởi Nguyễn Đình Chiện ngày {{ date | date:'dd/MM/yyyy HH:mm' }}</small>
+            <span class="badge px-2 py-1 text-danger  my-auto text-start bg-light">bắt buộc</span>
+        </span>
+    </span>
+    <!-- #endregion -->
+</div>
+
+<h2 class="text-uppercase fw-bold">
+    {{ reportTitle }}
+</h2>
+
+<div class="py-3 text-uppercase nav">
+    <a class="btn btn-link ps-0 fs-4" [routerLink]="'info'" >
+        Thông tin
+    </a>
+    <a class="btn btn-link fs-4" [routerLink]="'discussion'">
+        Thảo luận
+    </a>
+</div>
+
+<router-outlet></router-outlet>

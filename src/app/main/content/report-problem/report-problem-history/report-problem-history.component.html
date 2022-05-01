@@ -1,0 +1,171 @@
+<script src="/Users/hoangviet/Desktop/fis/data/01. Client/src/assets/scripts/scripts.js"></script>
+<!--#region menu -->
+<div class="conatiner col-12">
+  <div class="menu-history">
+    <h2 class="fw-bold  pb-3 border-bottom border-dark col-sm-12">LỊCH SỬ BÁO CÁO SỰ CỐ</h2>
+
+    <!-- #region menu -->
+    <div class="d-flex flex-row bd-highlight fw-bold fs-5 note-span">
+      <div class="p-2 pb-3 pe-3 bd-highlight" [ngClass]="{'active': activeBtn.btn==0}" (click)="activeBtn.btn=0">
+        <button>Tất cả</button>
+        <span>24</span>
+      </div>
+      <div class="p-2 pb-3 pe-3 bd-highlight" [ngClass]="{'active': activeBtn.btn==1}" (click)="activeBtn.btn=1">
+        <button>Chờ xử lý</button>
+        <span>24</span>
+      </div>
+      <div class="p-2 pb-3 pe-3 bd-highlight " [ngClass]="{'active': activeBtn.btn==2}" (click)="activeBtn.btn=2">
+        <button>Đã phân loại</button>
+        <span>24</span>
+      </div>
+      <div class="p-2 pb-3 pe-3 bd-highlight " [ngClass]="{'active': activeBtn.btn==3}" (click)="activeBtn.btn=3">
+        <button>Đã huỷ</button>
+        <span>24</span>
+      </div>
+      <div class="p-2 pb-3 pe-3 bd-highlight" [ngClass]="{'active': activeBtn.btn==4}" (click)="activeBtn.btn=4">
+        <button>Bản nháp</button>
+        <span>24</span>
+      </div>
+    </div>
+    <!-- #endregion -->
+  </div>
+  <!-- #endregion -->
+  <!--#region Chức năng xem tất cả báo cáo -->
+  <div class="function-all-htr py-4 row ">
+    <div class="fpt-calendar-btn position-relative btn btn-primary" id="date">
+      <i class="fpt-icon far fa-calendar-alt position-absolute fa-lg"></i>
+      <span>
+
+        {{ '04/15/2021' | date: 'dd/MM/yyy' }}
+        -
+        {{ '04/15/2021' | date: 'dd/MM/yyy' }}
+      </span>
+    </div>
+
+    <div class="col-3 pe-4">
+      <select class="form-select text-muted py-2">
+        <option selected>Hình thức báo cáo</option>
+        <option value="1">Tự nguyện</option>
+        <option value="2">Bắt buộc</option>
+      </select>
+    </div>
+    <div class="col-lg-4">
+      <div class=" row input-group">
+        <input type="text" class=" col-1 form-control input-search fst-italic fs-5 border-end-0"
+          placeholder="Nhập thông tin tìm kiếm . . ." aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <i
+          class="fpt-pointer fas bg-white fa-search input-group-text fa-2x text-primary col-2 border-start-0 border"></i>
+      </div>
+    </div>
+    <div class="col-2 btn-right text-end">
+      <button class="btn bg-primary text-white fw-bold">TẠO BÁO CÁO</button>
+    </div>
+  </div>
+</div>
+<!-- #endregion -->
+<!-- #region bảng lịch sử báo cáo -->
+<!-- #region Table Demo -->
+<div class="fpt-table">
+  <table class="table table-borderless mb-0">
+    <thead class="bg-light fpt-head">
+      <tr>
+        <th class="text-center">
+          <span>
+            ID
+          </span>
+          <i class="fas fa-sort"></i>
+        </th>
+        <th class="text-center">
+          <span>
+            Hình thức báo cáo
+          </span>
+          <i class="fas fa-sort"></i>
+        </th>
+        <th class="text-center">
+          <span>
+            Mô tả sự cố
+          </span>
+          <i class="fas fa-sort"></i>
+        </th>
+        <th class="text-center">
+          <span>
+            Trạng thái
+          </span>
+          <i class="fas fa-sort"></i>
+        </th>
+        <th class="text-center">
+          <span>
+            Thời gian xử lý
+          </span>
+          <i class="fas fa-sort"></i>
+        </th>
+        <th class="text-center">
+          <span>
+            Ảnh hưởng
+          </span>
+          <i class="fas fa-sort"></i>
+        </th>
+        <th class="text-center">
+          <span>
+            Phân loại
+          </span>
+          <i class="fas fa-sort"></i>
+        </th>
+      </tr>
+    </thead>
+    <tbody class="fpt-body">
+      <tr class="fpt-row" *ngFor="let report of people; let i = index">
+        <td class="text-primary">
+          {{ report.id }}
+        </td>
+        <td>
+          {{ report.htbc }}
+        </td>
+        <td>
+          {{ report.mtsc }} ...
+        </td>
+        <td class="text-center">
+          <label [libIncidentReportStatus]='report.tt' class="px-2 py-1">
+            {{report.tt}}
+          </label>
+        </td>
+        <td class="text-center">
+          <label [waitting]='report.tgxl'>
+            {{ people[i].tgxl }}
+          </label>
+        </td>
+        <td class="text-center">
+          {{ report.ah }}
+        </td>
+        <td class="text-center">
+          {{ report.pl }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- #endregion -->
+
+<!-- #endregion -->
+
+<!-- #region Thông tin bảng dữ liệu và chuyển trang dữ liệu -->
+<div class="row d-flex flex-row">
+  <div class="col-4 mt-2">
+    <label class="fw-bold">1-10</label>
+    của
+    <label class="fw-bold">50</label>
+  </div>
+
+  <div class="d-flex flex-row-reverse bd-highlight col">
+    <div class="p-2 bd-highlight"><i class="fas fa-caret-right fa-lg fpt-pointer"></i></div>
+    <div class="p-2 bd-highlight">5</div>
+    <div class="p-2 bd-highlight">4</div>
+    <div class="p-2 bd-highlight text-primary">3</div>
+    <div class="p-2 bd-highlight">2</div>
+    <div class="p-2 bd-highlight">1</div>
+    <div class="p-2 bd-highlight"><i class="fas fa-caret-left fa-lg fpt-pointer"></i></div>
+  </div>
+</div>
+
+
+<!-- #endregion -->

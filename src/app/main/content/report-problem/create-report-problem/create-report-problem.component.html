@@ -1,0 +1,361 @@
+<div class="container">
+  <h4 class="fw-bold">TẠO BÁO CÁO SỰ CỐ</h4>
+  <hr>
+  <!-- Start hình thức BC-->
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-sm-3 ps-4 ">
+          <label class="fw-bold mt-1 ">Hình thức BC :</label>
+        </div>
+        <div class="col-sm-3 ps-0">
+          <div class="btn-group dropdown dropend">
+            <button type="button" class="rounded border-muted bg-white dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              &nbsp; &nbsp; Bắt buộc &nbsp; &nbsp; &nbsp;
+            </button>
+            <ul class="dropdown-menu">
+              <!-- Dropdown menu links -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-sm-3">
+          <label class="fw-bold mt-1 ms-5">Loại sự cố:</label>
+        </div>
+        <div class="col-sm-3">
+          <div class="btn-group dropend ">
+            <button type="button" class=" rounded bg-white border-muted dropdown-toggle ">
+              &nbsp; &nbsp; Loại sự cố &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-sm-3 ps-4 ">
+          <label class="fw-bold mt-1 ">Nguyên nhân :</label>
+        </div>
+        <div class="col-sm-3 ps-0">
+          <div class="btn-group dropdown dropend">
+            <button type="button" class="rounded border-muted bg-white dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              &nbsp; &nbsp; Nguyên nhân &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            </button>
+            <ul class="dropdown-menu">
+              <!-- Dropdown menu links -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-sm-3">
+          <label class="fw-bold mt-1 ms-5">Ngày báo cáo:</label>
+        </div>
+        <div class="col-sm-3">
+          <div class="btn-group">
+            <button type="button" class=" rounded bg-white border-muted ">
+              <i class="far fa-calendar-alt fa-1x"></i>
+              <span id="date"> 26/03/2021 </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End hình thức BC-->
+  <br>
+  <!--Start thông tin đối tượng xãy ra sự cố-->
+  <div class="row">
+    <div class="dropdown">
+      <button type="button" class="bg-white fw-bold border-0 fs-5"> Thông tin đối tượng xãy ra sự cố
+        <i class="fas fa-chevron-down ps-1"></i>
+      </button>
+      <div class="bg-form my-2 py-2">
+        <div class="row">
+          <div class="col-sm-4 mt-2 form-group py-3 position-relative">
+            <label class="text-fly rounded"> Mã y tế: </label>
+            <input class="form-control w py-2 ms-4" type="text" value="210000043">
+          </div>
+          <div class="col-sm-4 mt-2 form-group py-3 position-relative">
+            <label class="text-fly rounded"> Số BA: </label>
+            <input class="form-control py-2 w ms-4 " type="text" value="21.0000043">
+          </div>
+          <div class="col-sm-4 mt-2 border-1  form-group py-3 position-relative">
+            <label class="text-fly rounded"> Họ và tên:</label>
+            <input class="form-control py-2 fw-bold  w ms-4" type="text" value="Nguyễn Minh Tâm">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-4 mt-2 form-group py-3 position-relative">
+            <label class="text-fly rounded"> Ngày sinh: </label>
+
+            <input class="form-control py-2 w ms-4" type="text" value="26/03/2021">
+          </div>
+          <div class="col-sm-4 mt-2 form-group py-3 position-relative">
+            <label class="text-fly rounded"> Khoa / Phòng: </label>
+            <input class="form-control py-2 w ms-4" type="text" value="210000043">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End thông tin đối tượng xãy ra sự cố-->
+  <br>
+  <!--Start Nơi xảy ra sự cố-->
+  <div class="">
+    <div class="dropdown">
+      <button type="button" class="bg-white fw-bold border-0 fs-5"> Nơi xảy ra sự cố
+        <i class="fas fa-chevron-down ps-1"></i>
+      </button>
+      <div class="bg-form my-2 py-2">
+        <div class="row">
+          <div class="col-sm-4 mt-2 form-group py-3 position-relative">
+            <label class="text-fly rounded"> Vị trí xảy ra sự cố: </label>
+            <input class="form-control w py-2 ms-4" type="text" value="DANH SÁCH KHOA PHÒNG">
+          </div>
+          <div class="col-sm-8 mt-2 form-group py-3 position-relative">
+            <label class="text-fly rounded">Vị trí cụ thể: </label>
+            <input class="form-control w1 py-2 ms-4 " type="text" value="FREE TEXT">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-4 mt-2 form-group py-3 position-relative">
+            <label class="text-fly rounded"> Thời gian: </label>
+            <input class="form-control py-2 w ms-4" type="text" value="26/03/2021">
+          </div>
+          <div class="col-sm-4 mt-2 form-group py-3 position-relative">
+            <label class="text-fly rounded"> Khoa / Phòng: </label>
+            <input class="form-control py-2 w ms-4" type="text" value="18:00:00">
+          </div>
+        </div>
+        <br>
+        <div class="col-sm-12 mt-2 form-group py-3 position-relative">
+          <label class="text-fly rounded"> Mô tả chi tiết: </label>
+          <input class="form-control w2 py-2  ms-4" type="text">
+        </div>
+        <br>
+        <div class="col-sm-12 mt-2 form-group py-3 position-relative">
+          <label class="text-fly rounded"> Xữ trí ban đầu: </label>
+          <input class="form-control w2 py-2  ms-4" type="text">
+        </div>
+        <br>
+        <div class="col-sm-12 mt-2 form-group py-3 position-relative">
+          <label class="text-fly rounded"> Đề xuất biện pháp khắc phục: </label>
+          <input class="form-control w2 py-2  ms-4" type="text">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Nơi xảy ra sự cố-->
+  <br>
+  <!-- Start thông báo sự cố-->
+  <div class="dropdown">
+    <button type="button" class="bg-white fw-bold border-0 fs-5"> Nơi xảy ra sự cố
+      <i class="fas fa-chevron-down ps-1"></i>
+    </button>
+    <div class="bg-form py-3">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-4 ps-4 ">
+              <label class="fw-bold ">Cho BS điều trị / người có trách nhiệm:</label>
+            </div>
+            <div class="col-sm-2 ">
+              <div class="btn-group dropdown dropend">
+                <button type="button" class="rounded btn1 border-muted bg-white dropdown-toggle"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  &nbsp; &nbsp; Không &nbsp; &nbsp; &nbsp;
+                </button>
+                <ul class="dropdown-menu">
+                  <!-- Dropdown menu links -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-4 ps-4 ">
+              <label class="fw-bold ">Ghi nhận vào hồ sơ bệnh án/giấy tờ liên quan: </label>
+            </div>
+            <div class="col-sm-2 ">
+              <div class="btn-group dropdown dropend">
+                <button type="button" class="rounded btn1 border-muted bg-white dropdown-toggle"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  &nbsp; &nbsp; Không&nbsp; &nbsp; &nbsp;
+                </button>
+                <ul class="dropdown-menu">
+                  <!-- Dropdown menu links -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-4 ps-4 ">
+              <label class="fw-bold ">Cho người nhà / người bảo hộ</label>
+            </div>
+            <div class="col-sm-2 ">
+              <div class="btn-group dropdown dropend">
+                <button type="button" class="rounded btn1 border-muted bg-white dropdown-toggle"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  &nbsp; &nbsp; Không &nbsp; &nbsp; &nbsp;
+                </button>
+                <ul class="dropdown-menu">
+                  <!-- Dropdown menu links -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-4 ps-4 ">
+              <label class="fw-bold ">Cho người bệnh: </label>
+            </div>
+            <div class="col-sm-2 ">
+              <div class="btn-group dropdown dropend">
+                <button type="button" class="rounded btn1 border-muted bg-white dropdown-toggle"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  &nbsp; &nbsp; Không ghi nhận&nbsp; &nbsp; &nbsp;
+                </button>
+                <ul class="dropdown-menu">
+                  <!-- Dropdown menu links -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End thông báo sự cố-->
+  <br>
+  <!-- Start phân loại ban đầu-->
+  <div class="dropdown">
+    <button type="button" class="bg-white fw-bold border-0 fs-5"> Phân loại ban đầu
+      <i class="fas fa-chevron-down ps-1"></i>
+    </button>
+    <div class="bg-form py-3 pb-0">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-4 ps-4 ">
+              <label class="fw-bold ">Phân loại ban đầu:</label>
+            </div>
+            <div class="col-sm-2 ">
+              <div class="btn-group dropdown dropend">
+                <button type="button" class="rounded btn1 border-muted bg-white dropdown-toggle"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  &nbsp; &nbsp; Đã xảy ra &nbsp; &nbsp; &nbsp;
+                </button>
+                <ul class="dropdown-menu">
+                  <!-- Dropdown menu links -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-4 ps-4 ">
+              <label class="fw-bold ">Ghi nhận vào hồ sơ bệnh án/giấy tờ liên quan: </label>
+            </div>
+            <div class="col-sm-2 ">
+              <div class="btn-group dropdown dropend">
+                <button type="button" class="rounded btn1 border-muted bg-white dropdown-toggle"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  &nbsp; &nbsp; Trung bình &nbsp; &nbsp; &nbsp;
+                </button>
+                <ul class="dropdown-menu">
+                  <!-- Dropdown menu links -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+    </div>
+  </div>
+  <br>
+  <!-- End phân loại ban đầu-->
+  <!--Start thông tin người báo cáo-->
+  <div class="row">
+    <div class="dropdown">
+      <button type="button" class="bg-white fw-bold border-0 fs-5"> Thông tin người báo cáo
+        <i class="fas fa-chevron-down ps-1"></i>
+      </button>
+      <div class="bg-form my-2 py-2">
+        <div class="row">
+          <div class="col-sm-4 mt-2 form-group py-3 position-relative">
+            <label class="text-fly rounded"> Họ và tên </label>
+            <input class="form-control w py-2 ms-4" type="text" value="Nguyễn Đình Chiện">
+          </div>
+          <div class="col-sm-4 mt-2 form-group py-3 position-relative">
+            <label class="text-fly rounded"> Số điện thoại </label>
+            <input class="form-control py-2 w ms-4 " type="text" value="0377888282">
+          </div>
+          <div class="col-sm-4 mt-2 border-1  form-group py-3 position-relative">
+            <label class="text-fly rounded"> Email </label>
+            <input class="form-control py-2 w ms-4" type="text" value="chiennd8@fpt.com.vn">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <!--Select2-->
+          <div class="col-sm-4 mt-2 form-group py-3 position-relative">
+            <label class="text-fly rounded"> Chức danh </label>
+            <!-- <select onload="onSelect2Load($this)" class="form-control js-example-tags py-2 w ms-4"> -->
+            <select class="form-control js-example-tags py-2 w ms-4">
+              <option value="1" selected="selected">Bác sĩ</option>
+              <option>Nhân viên</option>
+            </select>
+            <!--End selects-->
+          </div>
+          <div class="col-sm-8 mt-2 form-group py-3 position-relative">
+            <label class="text-fly rounded"> Khác </label>
+            <input class="form-control py-2 w1 ms-4" type="text" value="FREE TEXT">
+          </div>
+        </div>
+        <button type="button" class="border-1 ms-4 rounded border-dotted bg-white  ">
+          <i class="fas fa-user-plus"></i>
+        </button>
+        <span class="fw-bold "> Thêm người chứng kiến</span>
+      </div>
+      <br><br>
+      <div class="col-sm-12 mt-2 form-group py-3 position-relative">
+        <label class="text-fly rounded">Ghi chú </label>
+        <input class="form-control w2 py-2  ms-4" type="text">
+      </div>
+    </div>
+  </div>
+  <!--End thông tin người báo cáo-->
+  <hr>
+  <div class="row">
+    <div class="col-sm-6">
+      <button class="btn btn-outline-primary fw-bold me-3">Lưu </button>
+      <button class="btn btn-outline-primary fw-bold me-3"> Lưu bản nháp </button>
+      <button class="btn btn-outline-primary fw-bold "> Hủy bỏ </button>
+    </div>
+  </div>
+</div>

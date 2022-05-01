@@ -1,0 +1,107 @@
+<!-- #region header -->
+<div class="modal-header">
+  <h3>Bộ lọc</h3>
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross Click')"></button>
+</div>
+<!-- #endregion -->
+<!-- #region body dialog -->
+<div class="modal-body">
+  <div class="row fw-bold border-dashed pb-2">
+    <div class="col-5 py-2">
+      <label>Hình thức báo cáo</label>
+    </div>
+    <div class="col-2">
+      <label class="py-1 rounded px-2 style-btn-2">Bắt buộc</label>
+    </div>
+    <div class="col-3">
+      <label class="py-1 rounded px-2 style-btn-1">Tự nguyện</label>
+    </div>
+  </div>
+
+  <div class="row fw-bold border-dashed py-2 d-flex align-items-center">
+    <div class="col-5 py-2">
+      <label>Phân loại ban đầu</label>
+    </div>
+    <div class="col-3">
+      <label class="py-1 rounded px-2 style-btn-3">Chưa sảy ra</label>
+    </div>
+    <div class="col-3">
+      <label class="py-1 rounded px-2 style-btn-4">Đã sảy ra</label>
+    </div>
+  </div>
+
+  <div class="row fw-bold border-dashed py-2 d-flex align-items-center">
+    <div class="col-5 py-2">
+      <label>Mức độ ảnh hưởng ban đầu</label>
+    </div>
+    <div class="col-7 row">
+      <div class="col-4">
+        <label class="py-1 rounded px-4 border border-info"
+          style="color: rgb(10, 10, 10); background-color: rgb(223, 237, 250)">Nhẹ</label>
+      </div>
+      <div class="col-4">
+        <label class="py-1 rounded px-1 border border-info">Trung bình</label>
+      </div>
+      <div class="col-3">
+        <label class="py-1 rounded px-4 border border-info">Nặng</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="row fw-bold border-dashed py-2 d-flex align-items-center">
+    <div class="col-5 py-2">
+      <label>Trạng thái</label>
+    </div>
+    <div class="col-2">
+      <label class="py-1 rounded px-1 border border-muted">Chờ xử lý</label>
+    </div>
+    <div class="col-3">
+      <label class="py-1 rounded px-2 style-btn-1">Đã phân loại</label>
+    </div>
+    <div class="col-2">
+      <label class="py-1 rounded px-1 border style-btn-2">Đã huỷ</label>
+    </div>
+  </div>
+
+  <div class="row fw-bold  py-2 d-flex align-items-center">
+    <div class="col-5 py-2">
+      <label>Đối tượng sảy ra sự cố</label>
+    </div>
+    <div class="col-7">
+      <div class="row mb-2">
+        <div class="col-4">
+          <label class="py-1 rounded px-1 border border-info">Người bệnh</label>
+        </div>
+        <div class="col-8">
+          <label class="py-1 rounded px-2 border border-info">Người nhà\khách đến thăm</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <label class="py-1 rounded px-1 border border-info">Nhân viên y tế</label>
+        </div>
+        <div class="col-7">
+          <label class="py-1 rounded px-1 border border-info">Trang thiết bị/CSHT</label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- #region footer -->
+  <div class="row border-top border-muted">
+      <button class="mt-2 col-3 rounded border border-muted fw-muted fw-bold ms-2" (click)="actionTaken({ neutral: 1 })">
+            <i class="fas fa-sync-alt text-danger"></i>
+            Xoá bộ lọc
+          </button>
+    <div class="col-9 d-flex flex-row-reverse mt-2">
+      <button class="btn btn-primary col-4  " (click)="actionTaken({ neutral: 1 })">
+
+        Áp dụng
+      </button>
+    </div>
+
+  </div>
+
+  <!-- #endregion -->
+</div>
+<!-- #endregion -->

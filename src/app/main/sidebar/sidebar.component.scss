@@ -1,0 +1,120 @@
+@import "src/assets/styles/bootstrap";
+
+.btn-toggle {
+  background-color: inherit;
+}
+.nav {
+  overflow-x: hidden;
+
+  .show > .nav-link {
+    color: initial;
+    background-color: initial;
+
+    &:hover {
+      color: $primary;
+
+      .fpt-menu-icon {
+        background-color: var(--bs-primary);
+      }
+    }
+  }
+  .nav-link {
+    display: flex;
+    line-height: 2;
+
+    &,
+    * {
+      cursor: pointer;
+    }
+
+    .far.collapse-icon,
+    .fas.collapse-icon {
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+    }
+
+    .fpt-menu-icon {
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 2rem;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      &.fpt-icon-home {
+        mask: url("/assets/images/icon_menu/Home.svg") no-repeat center;
+      }
+      &.fpt-icon-tbc {
+        mask: url("/assets/images/icon_menu/TaoBaoCao.svg") no-repeat center;
+      }
+      &.fpt-icon-lsbc {
+        mask: url("/assets/images/icon_menu/LichSuBaoCao.svg") no-repeat center;
+      }
+      &.fpt-icon-plsc {
+        mask: url("/assets/images/icon_menu/PhanLoaiSuCo.svg") no-repeat center;
+      }
+      &.fpt-icon-tkbc {
+        mask: url("/assets/images/icon_menu/ThongKeBaoCao.svg") no-repeat center;
+      }
+      &.fpt-icon-tks {
+        mask: url("/assets/images/icon_menu/TaoKhaoSat.svg") no-repeat center;
+      }
+      &.fpt-icon-lsks {
+        mask: url("/assets/images/icon_menu/LichSuKhaoSat.svg") no-repeat center;
+      }
+      &.fpt-icon-tkks {
+        mask: url("/assets/images/icon_menu/ThongKeKhaoSat.svg") no-repeat center;
+      }
+      &.fpt-icon-tdg {
+        mask: url("/assets/images/icon_menu/TaoDanhGia.svg") no-repeat center;
+      }
+      &.fpt-icon-lsdg {
+        mask: url("/assets/images/icon_menu/LichSuDanhGia.svg") no-repeat center;
+      }
+      &.fpt-icon-xndg {
+        mask: url("/assets/images/icon_menu/XacNhanDanhGia.svg") no-repeat center;
+      }
+      &.fpt-icon-tkdg {
+        mask: url("/assets/images/icon_menu/ThongKeDanhGia.svg") no-repeat center;
+      }
+    }
+
+    &.active {
+      .fpt-menu-icon {
+        background-color: #fff;
+      }
+    }
+
+    &:not(.active) {
+      .fpt-menu-icon {
+        background-color: #000;
+      }
+    }
+  }
+}
+// .sidebar-header {
+//   height: var(--navbar-height);
+// }
+
+// .btn-resize {
+//   background-color: inherit;
+// }
+
+// .display-none{
+//   display: none;
+// }
+
+
+
+// .logo-img {
+//   height: 2rem;
+//   width: 2rem;
+// }
+
+// .icon-img-home-collapse {
+//   height: 1.8rem;
+//   width: 1.8rem;
+//   filter: invert(100%);
+//   margin: 0em;
+// }

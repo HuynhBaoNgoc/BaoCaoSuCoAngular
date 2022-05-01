@@ -1,0 +1,124 @@
+<div class="sidebar-header d-flex justify-content-between">
+  <img src="./assets/images/logo/logo.svg" class="m-3">
+  <button class="border-0 btn-toggle" onclick="sidebarToggle()">
+    <i class="fas fa-bars fa-2x text-primary"></i>
+  </button>
+</div>
+<nav class="flex-column nav nav-pills nav-fill p-2">
+  <!--#region-->
+  <a class="nav-link-menu-home text-start nav-link active" routerLink="/">
+    <span class="fw-bold text-uppercase d-flex">
+      <i class="fpt-menu-icon fpt-icon-home"></i>
+      <label id="homeLabel" class="label-menu">Trang chủ</label>
+    </span>
+  </a>
+  <!--#endregion-->
+  <div class="ms-1">
+    <!--#region Báo cáo sự cố-->
+    <div>
+      <a class="text-start nav-link collapsed" data-bs-toggle="collapse" href="#baoCaoSuCoCollapse">
+        <span class="fw-bold text-uppercase">
+          <label class="label-menu" id="bcsc">Báo cáo sự cố</label>
+          <label class="label-menu d-none" id="bcsc">BCSC</label>
+          <i class="ms-3 my-auto fas fa-chevron-down"></i>
+        </span>
+      </a>
+    </div>
+    <div class="collapse show" id="baoCaoSuCoCollapse">
+      <a class="nav-link-menu text-start nav-link" routerLink="/report/create">
+        <span class="d-flex my-auto fw-bold">
+          <i class="fpt-menu-icon fpt-icon-tbc"></i>
+          <label class="label-menu" id="tbc">Tạo báo cáo</label>
+        </span>
+      </a>
+      <a class="nav-link-menu text-start nav-link" routerLink="/report">
+        <span class="d-flex my-auto fw-bold">
+          <i class="fpt-menu-icon fpt-icon-lsbc"></i>
+          <label class="label-menu">Lịch sử báo cáo</label>
+        </span>
+      </a>
+      <a class="nav-link-menu text-start nav-link" routerLink="/incident-report/classify">
+        <span class="d-flex my-auto fw-bold">
+          <i class="fpt-menu-icon fpt-icon-plsc"></i>
+          <label class="label-menu">Phân loại sự cố</label>
+        </span>
+      </a>
+      <a class="nav-link-menu text-start nav-link" href="#">
+        <span class="d-flex my-auto fw-bold">
+          <i class="fpt-menu-icon fpt-icon-tkbc"></i>
+          <label class="label-menu">Thống kê sự cố</label>
+        </span>
+      </a>
+    </div>
+    <!--#endregion-->
+    <!--#region Khảo sát người bệnh-->
+    <a class="text-start nav-link collapsed" data-bs-toggle="collapse" href="#khaoSatNguoiBenhCollapse">
+      <span class="fw-bold text-uppercase">
+        <label class="label-menu" id="ksnb">Khảo sát người bệnh</label>
+        <label class="label-menu d-none" id="ksnb">KSNB</label>
+        <i class="ms-3 my-auto fas fa-chevron-down"></i>
+      </span>
+    </a>
+    <div class="collapse show" id="khaoSatNguoiBenhCollapse">
+      <a class="nav-link-menu text-start nav-link">
+        <span class="d-flex my-auto fw-bold">
+          <i class="fpt-menu-icon fpt-icon-tks"></i>
+          <label class="label-menu">Tạo khảo sát</label>
+        </span>
+      </a>
+      <a class="nav-link-menu text-start nav-link">
+        <span class="d-flex my-auto fw-bold">
+          <i class="fpt-menu-icon fpt-icon-lsks"></i>
+          <label class="label-menu">Lịch sử khảo sát</label>
+        </span>
+      </a>
+      <a class="nav-link-menu text-start nav-link">
+        <span class="d-flex my-auto fw-bold">
+          <i class="fpt-menu-icon fpt-icon-tkks"></i>
+          <label class="label-menu">Thống kê khảo sát</label>
+        </span>
+      </a>
+    </div>
+    <!--#endregion-->
+    <!--#region-->
+    <a 
+      class="text-start nav-link collapsed" 
+      data-bs-toggle="collapse" 
+      href="#danhGiaChatLuongCollapse">
+        <span class="fw-bold text-uppercase">
+          <label class="label-menu" id="dgcl">Đánh giá chất lượng</label>
+          <label class="label-menu d-none" id="dgcl">ĐGCL</label>
+          <i class="ms-3 my-auto fas fa-chevron-down"></i>
+        </span> 
+    </a>
+    <div class="collapse show" id="danhGiaChatLuongCollapse">
+      <a class="nav-link-menu text-start nav-link">
+        <span class="d-flex my-auto fw-bold">
+          <i class="fpt-menu-icon fpt-icon-tdg"></i>
+          <label class="label-menu">Tạo đánh giá</label>
+        </span>
+      </a>
+      <a class="nav-link-menu text-start nav-link">
+        <span class="d-flex my-auto fw-bold">
+          <i class="fpt-menu-icon fpt-icon-lsdg"></i>
+          <label class="label-menu">Lịch sử đánh giá</label>
+        </span>
+      </a>
+      <a class="nav-link-menu text-start nav-link">
+        <span class="d-flex my-auto fw-bold">
+          <i class="fpt-menu-icon fpt-icon-xndg"></i>
+          <label class="label-menu">Xác nhận đánh giá</label>
+        </span>
+      </a>
+      <a class="nav-link-menu text-start nav-link">
+        <span class="d-flex my-auto fw-bold">
+          <i class="fpt-menu-icon fpt-icon-tkdg"></i>
+          <label class="label-menu">Thống kê đánh giá</label>
+        </span>
+      </a>
+    </div>
+    <!--#endregion-->
+  </div>
+</nav>
+
+

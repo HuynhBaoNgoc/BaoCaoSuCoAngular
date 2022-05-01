@@ -1,0 +1,72 @@
+.note-span {
+  span{
+    background-color: rgb(241, 239, 239);
+    color: rgb(88, 88, 88);
+    font-size: 0.8em;
+    border-radius:0.6em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    cursor: pointer;
+  }
+  button{
+    border: 0em;
+    background-color: white;
+    font-weight: bold;
+    color: rgb(124, 129, 128);
+  }
+}
+.fpt-calendar-btn{
+  width: 20em;
+  margin-left: 1em;
+}
+
+.active{
+  border-bottom-style: solid;
+  border-color: rgb(231, 3, 3);
+  button{
+    color:black;
+  }
+}
+
+tr:hover{
+  background-color: rgb(211, 210, 210);
+}
+.mo-ta-su-co p{
+  width: 12em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.btn-right{
+  align-self: self-start;
+  margin-left: auto;
+}
+
+// #region Phân loại trạng thái
+.canceled{
+  background-color: rgb(240, 239, 239);
+  color: rgb(219, 59, 59);
+  font-weight: bold;
+  border-radius: 0.3em;
+}
+.watting{
+  background-color: rgb(255, 255, 255);
+  color: rgb(15, 14, 14);
+  font-weight: bold;
+  border-radius: 0.3em;
+  border: 0.1em solid rgb(194, 190, 190) ;
+}
+.draft{
+  background-color: rgb(230, 230, 230);
+  color: rgb(133, 133, 133);
+  font-weight: bold;
+  border-radius: 0.3em;
+}
+.classified{
+  background-color: rgb(215, 237, 238);
+  color: rgb(48, 119, 41);
+  font-weight: bold;
+  border-radius: 0.3em;
+}

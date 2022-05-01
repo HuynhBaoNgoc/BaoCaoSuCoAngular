@@ -1,0 +1,110 @@
+
+<!-- #region header -->
+<div class="modal-header mb-0">
+  <h3 class="mx-3">Phiếu báo cáo sự cố chi tiết</h3>
+  <h5 class="fw-bold text-primary px-2 pt-1">(ID:0001)</h5>
+  <h5 class="fw-bold text-success pt-1">(Tình nguyện)</h5>
+  <button type="button" class="btn-close me-3" aria-label="Close" (click)="activeModal.dismiss('Cross Click')"></button>
+</div>
+<!-- #endregion -->
+
+<!-- #region body dialog -->
+<div class="modal-body"  >
+  <!-- #region  Thông tin người báo cáo -->
+  <div class="dropdown">
+    <a class="dropdown-link collapsed text-dark text-decoration-none" data-bs-toggle="collapse" href="#thongTinSuCo">
+      <p class="fw-bold mx-3 mb-3 cursor-poiter col-12">
+        <label class="me-3">Thông tin sự cố</label>
+        <i class="fas fa-chevron-down ps-1"></i>
+      </p>
+    </a>
+    <div class="collapse rounded-3 border border-light border-2 mx-3 mb-3 pt-3 row" id="thongTinSuCo">
+      <div class="col-6 mb-3 ps-4" >
+        <label class=" fw-bold ">Tên Khoa/Phòng báo cáo</label><br>
+        <label>Tên khoa phòng</label>
+      </div>
+      <div class="col-6 mb-3 ps-4">
+        <label class=" fw-bold  ">Họ tên người bệnh</label><br>
+        <label>Nguyễn Minh An</label>
+      </div>
+      <div class="col-6 mb-3 ps-4">
+        <label class=" fw-bold  ">Khoa/Phòng, vị trí xảy ra sự cố: </label><br>
+        <label>Tên khoa phòng</label>
+      </div>
+      <div class="col-6 mb-3 ps-4">
+        <label class=" fw-bold  ">Ngày xảy ra sự cố</label><br>
+        <label>24/04/2021</label>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion -->
+
+  <!-- #region  nội dung sự cố -->
+  <div class="dropdown">
+    <a class="dropdown-link collapsed text-dark text-decoration-none" data-bs-toggle="collapse" href="#noiDungSuCo">
+      <p class="fw-bold mx-3 mb-3 cursor-poiter col-12">
+        <label class="me-3">Nội dung sự cố</label>
+        <i class="fas fa-chevron-down ps-1"></i>
+      </p>
+    </a>
+    <div class="collapse rounded-3 border border-light border-2 mx-3 mb-3 pt-3 row" id="noiDungSuCo">
+      <div class="row mb-3 ps-4">
+        <label class=" fw-bold ">Mô tả ngắn gọn về sự cố</label>
+        <label >Tên khoa phòng</label>
+      </div>
+      <div class="row mb-3 ps-4">
+        <label class=" fw-bold ">Điều trị/xử lý ban đầu đã được thực hiên</label>
+        <label >Tên khoa phòng</label>
+      </div>
+      <div class="row mb-3 ps-4">
+        <label class=" fw-bold ">Đề xuất biện pháp tránh lặp lại sự cố</label>
+        <label >Tên khoa phòng</label>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion -->
+
+  <!-- #region phân loại ban đầu -->
+  <div class="dropdown">
+    <p class="fw-bold mx-3 mb-3 cursor-poiter col-12">
+      <label class="me-3">Phân loại ban đầu</label>
+      <label class="text-primary mx-1 px-3 py-1 bg-pl">Chưa xảy ra</label>
+      <label class="text-dark mx-1 px-3 py-1 bg-pl">Nhẹ</label>
+    </p>
+  </div>
+  <!-- #endregion -->
+
+  <!-- #region  Thông tin người báo cáo -->
+  <div class="dropdown">
+    <a class="dropdown-link collapsed text-dark text-decoration-none" data-bs-toggle="collapse" href="#thongTinNguoiBaoCao">
+      <p class="fw-bold mx-3 mb-3 cursor-poiter col-12">
+        <label class="me-3">Thông tin về sự cố</label>
+        <i class="fas fa-chevron-down ps-1"></i>
+      </p>
+    </a>
+    <div class="collapse rounded-3 border border-light border-2 mx-3 mb-3 pt-3 row" id="thongTinNguoiBaoCao">
+      <div class="col-6 mb-3 ps-4 ">
+        <label class=" fw-bold ">Họ và tên</label>
+        <br>
+        <label >Nguyễn Tâm Minh</label>
+      </div>
+      <div class="col-6 mb-3 ps-4">
+          <label class=" fw-bold  ">Email</label><br>
+          <label>abc@gmail.com</label>
+      </div>
+      <div class="col-6 mb-3 ps-4 ">
+          <label class=" fw-bold ">Số điện thoại</label><br>
+          <label >0377 728 221</label>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion -->
+</div>
+<!-- #endregion -->
+
+<!-- #region footer -->
+<div class="modal-footer bg-light" >
+  <button class="btn btn-primary px-5 me-3" (click)="actionTaken({neutral: 1})">Đóng</button>
+</div>
+<!-- #endregion -->
+

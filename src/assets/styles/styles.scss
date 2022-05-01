@@ -1,0 +1,180 @@
+:root {
+  --sidebar-width: 18rem;
+  --navbar-height: 5rem;
+  --sidebar-collapsed-width: 7rem;
+}
+
+* {
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10pt;
+}
+
+.form-check,
+.custom-checkbox {
+  * {
+    cursor: pointer;
+  }
+}
+
+@import "bootstrap";
+@import "node_modules/@fortawesome/fontawesome-free/scss/variables";
+
+.badge {
+  line-height: 1.5;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* #region  Define avatar user */
+img {
+  $size: 3rem;
+  border-radius: 0.5rem;
+
+  &.img-avatar {
+    height: $size;
+    width: $size;
+
+    &-lg {
+      height: calc($size * 1.25);
+      width: calc($size * 1.25);
+    }
+
+    &-sm {
+      height: calc($size * 0.75);
+      width: calc($size * 0.75);
+    }
+  }
+}
+/* #endregion */
+
+/* #region  FPT custom badge */
+.fpt-badge {
+  padding: 0.5em 0.75em;
+  border-radius: 0.25em;
+  color: white;
+  width: 4em;
+  text-align: center;
+}
+/* #endregion */
+
+/* #region  FPT custom list item */
+.card {
+  .fpt-list-item {
+    padding: $list-group-item-padding-y $list-group-item-padding-x;
+    display: flex;
+
+    &:not(:last-child) {
+      border-bottom: $list-group-border-width solid $list-group-border-color;
+    }
+  }
+}
+/* #endregion */
+
+/* #region  FPT custom cursor */
+.fpt-pointer {
+  cursor: pointer;
+}
+/* #endregion */
+
+/* #region  FPT custom button */
+.fpt-btn-group {
+  * {
+    &:not(:last-child) {
+      margin-right: 0.25em;
+    }
+  }
+}
+
+.fpt-calendar-btn {
+  .fpt-icon {
+    top: 0.65rem;
+    left: 0.4rem;
+  }
+}
+/* #endregion */
+
+/* #region  FPT custom table */
+.fpt-table {
+  $table-border-color: black;
+  $table-border-radius: 0.5rem;
+
+  border: 1px solid $table-border-color;
+  border-radius: $table-border-radius;
+
+  .fpt-head {
+    border-bottom: 1px solid $table-border-color;
+
+    th {
+      * {
+        &:not(:last-child) {
+          margin-right: 0.25rem;
+        }
+      }
+    }
+
+    :last-child {
+      border-top-right-radius: $table-border-radius;
+    }
+
+    :first-child {
+      border-top-left-radius: $table-border-radius;
+    }
+  }
+
+  .fpt-body {
+    .fpt-row {
+      &:not(:last-child) {
+        border-bottom: 1px solid $table-border-color;
+      }
+    }
+  }
+}
+/* #endregion */
+
+/* #region  FPT input custom */
+input:-webkit-autofill {
+  background-color: red !important;
+}
+/* #endregion */
+
+/* #region  FPT row list */
+.fpt-row-list {
+  > * {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}
+/* #endregion */
+
+.main-body{
+  &.collapsed-sidebar{
+    .nav-link-menu{
+      justify-content: center;
+    }
+    .nav-link-menu-home{
+      justify-content: center;
+    }
+  }
+
+  &:not(.collapsed-sidebar){
+    .nav-link-menu{
+      padding-left: #{$spacer * 3};
+    }
+  }
+}

@@ -1,0 +1,75 @@
+<div class="col-sm-9 col-12 mt-3">
+    <div class="row mb-5">
+        <div class="d-flex">
+            <img 
+                class="img-avatar my-auto me-2 mt-0" 
+                src="./assets/images/avatar.png">
+            <div class="flex-fill block-input-comment">
+                <label>Bình luận</label>
+                <input #comment ngModel
+                (keyup.enter)="showComment(comment.value)"  
+                type="text" 
+                class="input-comment p-4 flex-fill mt-1" 
+                placeholder="Nhập nội dung thảo luận...">
+            </div>
+        </div>
+    </div>
+    <div 
+        class="row mb-3" 
+        *ngFor="let item of cmtArray">
+            <div class="d-flex">
+                <img 
+                    class="img-avatar-cmt my-auto me-4 mt-0" 
+                    src="./assets/images/avatar.png">
+                <div class="flex-fill">
+                    <label class="fw-bold me-3 mt-0">
+                        Nguyễn Đình Chiện
+                    </label>
+                    <label class="text-secondary mt-0">
+                        2 ngày
+                    </label>
+                    <p class="mt-2">
+                        {{item}}
+                    </p>
+                </div>
+            </div>      
+    </div>
+    <div class="row mb-3">
+        <div class="d-flex">
+            <img 
+                class="img-avatar-cmt my-auto me-4 mt-0" 
+                src="./assets/images/avatar.png">
+            <div class="flex-fill">
+                <label class="fw-bold me-3 mt-0">
+                    Nguyễn Đình Chiện
+                </label>
+                <label class="text-secondary mt-0">
+                    2 ngày
+                </label>
+                <p class="mt-2">
+                    Sau khi tiếp nhận báo cáo sự cố y khoa xảy ra, Phòng Quản Lý chất lượng phải tiến hành phân loại theo cả 3 tiêu chí dưới đây!
+                </p>
+            </div>
+        </div>      
+    </div>
+    <div class="row mb-3">
+        <div class="d-flex">
+            <img 
+                class="img-avatar-cmt my-auto me-4 mt-0" 
+                src="./assets/images/avatar.png">
+            <div class="flex-fill">
+                <label class="fw-bold me-3 mt-0">
+                    Nguyễn Đình Chiện
+                </label>
+                <label class="text-secondary mt-0">
+                    2 ngày
+                </label>
+                <p class="mt-2">
+                    Sau khi tiếp nhận báo cáo sự cố y khoa xảy ra, Phòng Quản Lý chất lượng phải tiến hành phân loại theo cả 3 tiêu chí dưới đây!
+                </p>
+            </div>
+        </div>      
+    </div>
+</div>
+
+

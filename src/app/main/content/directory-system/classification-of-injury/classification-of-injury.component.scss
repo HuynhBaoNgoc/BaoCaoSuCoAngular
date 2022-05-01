@@ -1,0 +1,27 @@
+.bg-label-0{
+  background-color: rgb(240, 240, 240);
+  border: 0.05em solid rgb(219, 219, 219);
+  height: 2.5em;
+  margin-top: 1em;
+}
+
+.bg-label-1{
+  background-color:white;
+  border: 0.05em solid rgb(219, 219, 219);
+  height: 2.5em;
+  margin-top: 1em;
+}
+.fpt-table{
+  border:0.2em solid rgb(173, 170, 170);
+  background-color: white;
+  border-bottom: 0em;
+  th{
+    color: rgb(88, 87, 87);
+  }
+}
+.fpt-table .fpt-row{
+  border-bottom: 0.2em solid rgb(173, 170, 170);
+}
+.bg-table{
+  background-color: rgb(228, 228, 225);
+}

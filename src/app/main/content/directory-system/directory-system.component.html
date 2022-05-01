@@ -1,0 +1,134 @@
+
+<h2 class="border-bottom border-muted pb-4 ps-2">DANH MỤC HỆ THỐNG</h2>
+<!-- #region Danh mục hệ thống -->
+<div class="row">
+  <!-- #region sidebar -->
+  <div class="col-4  mt-3" >
+    <!-- #region thanh tim kiem -->
+      <div class="input-group" >
+        <div class="input-group">
+          <input type="text" class="form-control form-control-lg" placeholder="Nhập nội dung tìm kiếm...">
+          <div class="input-group-text fpt-input-group-text text-primary fpt-pointer">
+            <i class="fas fa-lg fa-search mx-auto"></i>
+          </div>
+        </div>
+      </div>
+    <!-- #endregion -->
+    <!-- #region menu -->
+    <div class=" fw-bold my-3 ">
+      <label class="border-muted rounded border border-bottom-0 py-3 ps-2 col-12">Danh mục
+        <i class="fas fa-chevron-down ps-1 "></i>
+      </label>
+      <nav class="flex-column nav nav-pills nav-fill">
+        <a class="text-start nav-link ps-4 collapsed border-muted rounded cursor border border-bottom-0 " data-bs-toggle="collapse" href="#danhGiaChatLuongCollaps">
+          <i class="fas fa-chevron-down ps-1 "></i>
+          <span class="fw-normal pe-5 ps-2">
+            Phân loại mức độ tổn thương
+          </span>
+        </a>
+        <span class="collapse fw-normal" id="danhGiaChatLuongCollaps">
+          <a class="text-start nav-link ps-5  border-muted rounded cursor border border-bottom-0 "  routerLink="/directory/1">
+            <span class="my-auto ms-4">
+              Hình thức báo cáo
+            </span>
+          </a>
+          <a class="text-start nav-link ps-5 border-muted rounded cursor border border-bottom-0 "  routerLink="/directory/2">
+            <span class="my-auto ms-4">
+              Nhóm mức độ tổn thương
+            </span>
+          </a>
+          <a class="text-start nav-link ps-5 border-muted rounded cursor border border-bottom-0 "  routerLink="/directory/3">
+            <span class="my-auto ms-4">
+              Sự cố chi tiết
+            </span>
+          </a>
+          <a class="text-start nav-link ps-5 border-muted rounded cursor border border-bottom-0 "  routerLink="/directory/4">
+            <span class="my-auto ms-4">
+              Loại sự cố y khoá nghiêm trọng
+            </span>
+          </a>
+          <a class="text-start nav-link ps-5 border-muted rounded cursor border border-bottom-0 "  routerLink="/directory/5">
+            <span class="my-auto ms-4">
+              Sự cố y khoá nghiêm trọng
+            </span>
+          </a>
+          <a class="text-start nav-link ps-5 border-muted rounded cursor border border-bottom-0 "  routerLink="/directory/6">
+            <span class="my-auto ms-4">
+              Mức độ tổn thương trên tổ chức
+            </span>
+          </a>
+        </span>
+      </nav>
+      <nav class="flex-column nav nav-pills nav-fill">
+        <a class="text-start nav-link ps-4 collapsed border-muted rounded cursor border border-bottom-0 " data-bs-toggle="collapse" href="#danhGiaChatLuongColl">
+          <i class="fas fa-chevron-down ps-1 "></i>
+          <span class="fw-normal pe-5 ps-2">
+            Phân loại nhóm sự cố
+          </span>
+        </a>
+        <span class="collapse fw-normal" id="danhGiaChatLuongColl">
+          <a class="text-start nav-link ps-5  border-muted rounded cursor border border-bottom-0 "  routerLink="/directory/7">
+            <span class="my-auto ms-4">
+              Nhóm sự cố
+            </span>
+          </a>
+          <a class="text-start nav-link ps-5 border-muted rounded cursor border border-bottom-0 "  routerLink="/directory/8">
+            <span class="my-auto ms-4">
+              Nội dung nhóm sự cố
+            </span>
+          </a>
+        </span>
+      </nav>
+      <nav class="flex-column nav nav-pills nav-fill">
+        <a class="text-start nav-link ps-4 collapsed border-muted rounded cursor border border-bottom-0 " data-bs-toggle="collapse" href="#danhGiaChatLuongCollas">
+          <i class="fas fa-chevron-down ps-1 "></i>
+          <span class="fw-normal pe-5 ps-2">
+            Phân loại nhóm nguyên nhân
+          </span>
+        </a>
+        <span class="collapse fw-normal" id="danhGiaChatLuongCollas">
+          <a class="text-start nav-link ps-5  border-muted rounded cursor border border-bottom-0 "  routerLink="/directory/9">
+            <span class="my-auto ms-4">
+              Nhóm nguyên nhân
+            </span>
+          </a>
+          <a class="text-start nav-link ps-5 border-muted rounded cursor border border-bottom-0 "  routerLink="/directory/10">
+            <span class="my-auto ms-4">
+              Nội dung nhóm nguyên nhân
+            </span>
+          </a>
+        </span>
+      </nav>
+      <nav class="flex-column nav nav-pills nav-fill">
+        <a class="text-start nav-link ps-4 collapsed border-muted rounded cursor border  " data-bs-toggle="collapse" href="#danhGiaChatLuong">
+          <i class="fas fa-chevron-down ps-1 "></i>
+          <span class="fw-normal pe-5 ps-2">
+            Other
+          </span>
+        </a>
+        <span class="collapse fw-normal" id="danhGiaChatLuong">
+          <a class="text-start nav-link ps-5  border-muted rounded cursor border  border-top-0"  routerLink="#">
+            <span class="my-auto ms-4">
+              Mức độ tổn thương trên tổ chức
+            </span>
+          </a>
+        </span>
+      </nav>
+    </div>
+    <!-- #endregion -->
+  </div>
+  <!-- #endregion -->
+  <div class="col-8">
+    <router-outlet ></router-outlet>
+  </div>
+</div>
+
+<!-- #endregion -->
+<div class="col-12 border-top border-muted mt-2 ">
+  <div class="col-4 row my-2 ms-1">
+    <button class="btn rounded border-primary col mx-1 fw-bold text-primary">Lưu</button>
+    <button class="btn rounded border-danger text-danger col mx-1 fw-bold">Xoá</button>
+    <button class="btn rounded border-primary col mx-1 fw-bold text-primary">Huỷ bỏ</button>
+  </div>
+</div>
+

@@ -1,0 +1,33 @@
+<!-- #region header -->
+<div class="modal-header">
+  <h3>Nhóm sự cố khác</h3>
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross Click')"></button>
+</div>
+<!-- #endregion -->
+<!-- #region body dialog -->
+<div class="modal-body">
+  <div>
+    <div>
+      <label class="text-muted fw-bold">
+        Nhóm sự cố
+      </label>
+      <textarea class="border rounded border-muted py-2 col-12"></textarea>
+    </div>
+    <div>
+      <label  class="text-muted fw-bold">
+        Sự cố chi tiết
+      </label>
+      <textarea class="border rounded border-muted py-2 col-12"></textarea>
+    </div>
+  </div>
+
+  <!-- #region footer -->
+    <div class="d-flex flex-row-reverse mt-2">
+      <button class="btn btn-primary col-2 " (click)="actionTaken({ neutral: 1 })">
+        Thêm
+      </button>
+    </div>
+
+  <!-- #endregion -->
+</div>
+<!-- #endregion -->

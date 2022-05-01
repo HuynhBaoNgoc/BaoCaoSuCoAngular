@@ -1,0 +1,30 @@
+.input-comment {
+    border-radius: 0.5rem;
+    border-color: var(--bs-light);
+    overflow: auto;
+    width: 100%;
+}
+.img-avatar-cmt {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0.5rem;
+    float: left;
+}
+.img-avatar {
+    float: left;
+}
+
+.block-input-comment {
+    position: relative;
+    label {
+        position: absolute;
+        top: -0.75rem;
+        left: 1.5rem;
+        padding: 0.5rem;
+        z-index: 1;
+        background-color: var(--bs-white);
+        color: var(--bs-secondary);
+        font-weight: bold;
+    }
+}
+

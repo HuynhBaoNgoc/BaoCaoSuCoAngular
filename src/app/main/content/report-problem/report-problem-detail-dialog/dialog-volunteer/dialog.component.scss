@@ -1,0 +1,49 @@
+.modal-header{
+  border:0;
+}
+.modal-footer{
+  border:0
+}
+.cursor-poiter{
+  cursor: pointer;
+}
+.width-btn{
+  width: 10em;
+}
+.width-20{
+  width: 20em;
+}
+.bg-pl{
+  background-color: rgb(235, 242, 247);
+  border-radius: 0.5em;
+  text-align: center;
+}
+@import "node_modules/@fortawesome/fontawesome-free/scss/variables";
+@import "src/assets/styles/bootstrap";
+
+.dropdown {
+  .show > .dropdown-link {
+    color: initial;
+    background-color: initial;
+
+    &:hover{
+      color: $dark;
+    }
+  }
+  .dropdown-link {
+    display: flex;
+    &.collapsed {
+      .fas::before {
+        content: fa-content($fa-var-chevron-down);
+      }
+    }
+    &:not(.collapsed) {
+      .far::before,
+      .fas::before {
+        content: fa-content($fa-var-chevron-up);
+      }
+    }
+  }
+}
+
+

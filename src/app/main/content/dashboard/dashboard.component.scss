@@ -1,0 +1,52 @@
+@import "node_modules/@fortawesome/fontawesome-free/scss/variables";
+
+.card {
+  margin-bottom: 1rem;
+}
+
+*[data-bs-toggle="collapse"] {
+  &.collapsed {
+    .far.collapse-icon::before,
+    .fas.collapse-icon::before {
+      content: fa-content($fa-var-chevron-down);
+    }
+  }
+
+  &:not(.collapsed) {
+    .far.collapse-icon::before,
+    .fas.collapse-icon::before {
+      content: fa-content($fa-var-chevron-up);
+    }
+  }
+}
+
+// .float-right
+// {
+//   float:right;
+// }
+// .active{
+//   border-top-style: solid;
+//   border-top-color:red;
+
+// }
+// .text-font-size{
+//   font-size: 4em;
+// }
+// .float-left{
+//   float: left;
+// }
+// .text-font-size-2{
+//   font-size: 0.74em;
+//   font-weight: bold;
+// }
+// .text-font-size-3{
+//   font-size: 1.1em;
+//   font-weight: bold;
+// }
+// .chart-height-width{
+//   height: 20em; width:58.8em
+// }
+// .text-font-size-4{
+//   font-size: 0.8em;
+//   font-weight: bold;
+// }

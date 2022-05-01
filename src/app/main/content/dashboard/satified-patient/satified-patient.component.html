@@ -1,0 +1,26 @@
+<div class="card shadow text-uppercase fw-bold h-100">
+  <div class="card-header pt-0 pe-0">
+    <div class="fpt-tab-nav clearfix">
+      <nav class="nav float-end fw-normal">
+        <nav class="nav float-end fw-normal fpt-pointer">
+          <a class="nav-link" [ngClass]="{'active': patientType === INPATIENT}"
+            (click)="onPatientTypeClick(INPATIENT)">Nội
+            trú</a>
+          <a class="nav-link" [ngClass]="{'active': patientType === OUTPATIENT}"
+            (click)="onPatientTypeClick(OUTPATIENT)">Ngoại trú</a>
+        </nav>
+      </nav>
+    </div>
+    <h4>
+      Điểm hài lòng người bệnh
+    </h4>
+  </div>
+  <div class="card-body">
+    <div style="display: block;">
+      <canvas baseChart width="400" height="400" [datasets]="lineChartData" [labels]="lineChartLabels"
+        [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType"
+        [plugins]="lineChartPlugins">
+      </canvas>
+    </div>
+  </div>
+</div>

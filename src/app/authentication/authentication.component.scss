@@ -1,0 +1,93 @@
+@import "src/assets/styles/bootstrap";
+
+.fpt-auth-container {
+  $auth-main-width: 100vw;
+
+  .fpt-thumbnail {
+    width: calc(100vw - #{$auth-main-width});
+  }
+
+  .fpt-auth-main {
+    width: $auth-main-width;
+  }
+
+  @include responsive(MD) {
+    $auth-main-width: 40%;
+
+    .fpt-thumbnail {
+      width: calc(100vw - #{$auth-main-width});
+    }
+
+    .fpt-auth-main {
+      width: $auth-main-width;
+    }
+  }
+
+  @include responsive(XL) {
+    $auth-main-width: 40%;
+
+    .fpt-thumbnail {
+      width: calc(100vw - #{$auth-main-width});
+    }
+
+    .fpt-auth-main {
+      width: $auth-main-width;
+    }
+  }
+
+  // @include desktop {
+  //   .fpt-thumbnail {
+  //     width: calc(100vw - #{$auth-main-width});
+  //   }
+
+  //   .fpt-auth-main {
+  //     width: $auth-main-width;
+  //   }
+  // }
+
+  // @include mobile {
+  //   $auth-main-width: 100vw;
+
+  //   .fpt-thumbnail {
+  //     width: calc(100vw - #{$auth-main-width});
+  //   }
+
+  //   .fpt-auth-main {
+  //     width: $auth-main-width;
+  //   }
+  // }
+
+  // @include table {
+  //   $auth-main-width: 100vw;
+
+  //   .fpt-thumbnail {
+  //     width: calc(100vw - #{$auth-main-width});
+  //   }
+
+  //   .fpt-auth-main {
+  //     width: $auth-main-width;
+  //   }
+  // }
+
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+
+  .fpt-thumbnail {
+    // width: calc(100vw - #{$auth-main-width});
+    height: 100vh;
+
+    .thumbnail {
+      border-radius: 0;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .fpt-auth-main {
+    // width: $auth-main-width;
+    height: 100vh;
+  }
+}

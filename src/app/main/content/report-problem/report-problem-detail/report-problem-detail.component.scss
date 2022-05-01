@@ -1,0 +1,16 @@
+.nav-btn-group {
+    display: flex;
+
+    & > *:not(:first-child) {
+        margin-left: 1rem;
+    }
+
+    .author-detail {
+        display: flex;
+
+        .badge {
+            line-height: 1;
+            font-size: 0.75em;
+        }
+    }
+}

@@ -1,0 +1,268 @@
+<!-- Start 4 dashboard -->
+<!-- <div class="float-right" style="width: 17em;">
+    <button type="button" class="btn btn-primary fw-bold btn-sm">
+      <i class="far fa-calendar-alt fa-2x"></i>
+      <span id="date">04/02/2021-03/03/2021</span>
+    </button>
+  </div>
+  <br><br><br>
+  <div class="row text-white">
+    <div class="col-sm-3">
+      <div class="card bg-primary px-1 py-3 mx-1">
+        <span class="fw-bold text-font-size">102</span>
+        <h4 class="margin-left-0-5 fs-5">BÁO CÁO SỰ CỐ</h4>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card bg-success  px-1 py-3 mx-1">
+        <span class="fw-bold text-font-size">18</span>
+        <h4 class="margin-left-0-5 fs-5">SC ẢNH HƯỞNG TỚI NGƯỜI BỆNH </h4>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card bg-danger px-1 py-3 mx-1">
+        <span class="fw-bold text-font-size">42</span>
+        <h4 class="margin-left-0-5 fs-5">SC CHƯA GIẢI QUYẾT</h4>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card bg-warning px-1 py-3 mx-1">
+        <span class="fw-bold text-font-size">18</span>
+        <h4 class="margin-left-0-5 fs-5">SỐ PHIẾU KHẢO SÁT NGƯỜI BỆNH</h4>
+      </div>
+    </div>
+  </div> -->
+<div class="clearfix mb-3">
+  <h3 class="text-uppercase float-start fw-bold">
+    Phân tích
+  </h3>
+  <div class="float-end d-flex">
+    <div class="fpt-btn-group me-3">
+      <button class="btn btn-outline-primary">
+        Hôm nay
+      </button>
+      <button class="btn btn-outline-primary">
+        Tuần
+      </button>
+      <button class="btn btn-outline-primary active">
+        Tháng
+      </button>
+    </div>
+    <div class="fpt-calendar-btn position-relative btn btn-primary">
+      <i class="fpt-icon far fa-calendar-alt position-absolute fa-lg"></i>
+      <span>
+        {{ '04/15/2021' | date: 'dd/MM/yyy' }}
+        -
+        {{ '04/15/2021' | date: 'dd/MM/yyy' }}
+      </span>
+    </div>
+  </div>
+</div>
+<div class="row text-white text-uppercase fw-bold">
+  <div class="col-xl-3 col-lg-6">
+    <div class="card bg-primary">
+      <div class="card-body">
+        <h1>102</h1>
+        <label>BÁO CÁO SỰ CỐ</label>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-lg-6">
+    <div class="card bg-success">
+      <div class="card-body">
+        <h1>18</h1>
+        <label>SC ẢNH HƯỞNG TỚI NGƯỜI BỆNH</label>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-lg-6">
+    <div class="card bg-danger">
+      <div class="card-body">
+        <h1>42</h1>
+        <label>SC CHƯA GIẢI QUYẾT</label>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-lg-6">
+    <div class="card bg-warning">
+      <div class="card-body">
+        <h1>18</h1>
+        <label>SỐ PHIẾU KHẢO SÁT NGƯỜI BỆNH</label>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End 4 dashboard -->
+<!-- Start Bao Cao Su Co-->
+<h4 class="py-3 fpt-pointer fw-bold" data-bs-toggle="collapse" href="#baoCaoSuCoDashboardCollapse">
+  BÁO CÁO SỰ CỐ
+  <i class="ms-2 fas fa-chevron-down"></i>
+</h4>
+<div class="row collapse show" id="baoCaoSuCoDashboardCollapse">
+  <!-- Start KHOA/PHONG-->
+  <div class="col-xl-4 col-lg-12 mb-3">
+    <div class="card shadow text-uppercase fw-bold h-100">
+      <div class="card-header">
+        <h4>
+          Khoa / Phòng
+        </h4>
+      </div>
+      <div class="fpt-list-item">
+        <span class="me-auto my-auto text-primary">
+          &lt;KHOA / PHÒNG TOP 1&gt;
+        </span>
+        <span class="fpt-badge bg-warning ms-auto">
+          14
+        </span>
+      </div>
+      <div class="fpt-list-item">
+        <span class="me-auto my-auto text-primary">
+          &lt;KHOA / PHÒNG TOP 1&gt;
+        </span>
+        <span class="fpt-badge bg-warning ms-auto">
+          14
+        </span>
+      </div>
+      <div class="fpt-list-item">
+        <span class="me-auto my-auto text-primary">
+          &lt;KHOA / PHÒNG TOP 2&gt;
+        </span>
+        <span class="fpt-badge bg-warning ms-auto">
+          24
+        </span>
+      </div>
+      <div class="fpt-list-item">
+        <span class="me-auto my-auto text-primary">
+          &lt;KHOA / PHÒNG TOP 3&gt;
+        </span>
+        <span class="fpt-badge bg-warning ms-auto">
+          35
+        </span>
+      </div>
+      <div class="fpt-list-item">
+        <span class="me-auto my-auto text-primary">
+          &lt;KHOA / PHÒNG TOP 4&gt;
+        </span>
+        <span class="fpt-badge bg-warning ms-auto">
+          8
+        </span>
+      </div>
+      <div class="fpt-list-item">
+        <span class="me-auto my-auto text-primary">
+          &lt;KHOA / PHÒNG TOP 5&gt;
+        </span>
+        <span class="fpt-badge bg-warning ms-auto">
+          2
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- </ul>
+    <div class="row button-group text-align-left" role="group" aria-label="Basic outlined example">
+      <div class="col-lg-3">
+        <div class="row">
+          <button type="button" class="btn text-font-size-2 {{isActive.isBool[0]}}"
+            (click)="this.isActive.a=0; btnClick()">Tất cả
+            <span class="text-muted">31</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="row">
+          <button type="button" class="text-font-size-2 btn {{isActive.isBool[1]}}"
+            (click)="this.isActive.a=1; btnClick()">Tháng
+            <span class="text-muted">18</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="row">
+          <button type="button" class="text-font-size-2 btn {{isActive.isBool[2]}}"
+            (click)="this.isActive.a=2; btnClick()">Tuần
+            <span class=" text-muted rounded-pill">15</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="row">
+          <button type="button" class="btn text-font-size-2 {{isActive.isBool[3]}}"
+            (click)="this.isActive.a=3; btnClick()">Hôm nay
+            <span class="text-muted">8</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <h3 class="my-2 fw-bold fs-5">KHOA/PHÒNG</h3>
+
+    <div class="row border border-start-0 border-end-0">
+      <div class="my-2 text-primary">
+        <h4 class="text-font-size-3">KHOA / PHÒNG TOP 1
+          <span class="float-right bg-warning text-white rounded py-1"> &nbsp; 14 &nbsp;</span>
+        </h4>
+      </div>
+    </div>
+
+    <div class="row border border-start-0 border-end-0">
+      <div class="my-2 text-primary">
+        <h4 class="text-font-size-3">KHOA / PHÒNG TOP 2
+          <span class="float-right bg-warning text-white rounded py-1"> &nbsp; 14 &nbsp;</span>
+        </h4>
+      </div>
+    </div>
+
+    <div class="row border border-start-0 border-end-0">
+      <div class="my-2 text-primary">
+        <h4 class="text-font-size-3">KHOA / PHÒNG TOP 3
+          <span class="float-right bg-warning text-white rounded py-1"> &nbsp; 14 &nbsp;</span>
+        </h4>
+      </div>
+    </div>
+
+    <div class="row border border-start-0 border-end-0">
+      <div class="my-2 text-primary">
+        <h4 class="text-font-size-3">KHOA / PHÒNG TOP 4
+          <span class="float-right bg-warning text-white rounded py-1"> &nbsp; 14 &nbsp;</span>
+        </h4>
+      </div>
+    </div>
+
+    <div class="row border border-start-0 border-bottom-0 border-end-0">
+      <div class="my-2 text-primary">
+        <h4 class="text-font-size-3">KHOA / PHÒNG TOP 5
+          <span class="float-right bg-warning text-white rounded py-1"> &nbsp; 14 &nbsp;</span>
+        </h4>
+      </div>
+    </div>
+
+  </div> -->
+  <!-- End khoa phong  -->
+  <!-- Horizontal Bar Chart -->
+  <div class="col-xl-8 col-lg-12 mb-3">
+    <div class="card shadow text-uppercase fw-bold h-100">
+      <div class="card-header">
+        <h4>
+          Phân loại báo cáo sự cố
+        </h4>
+      </div>
+      <div class="card-body">
+        <fpt-category-incident-reports></fpt-category-incident-reports>
+      </div>
+    </div>
+  </div>
+  <!-- Horizontal Bar Chart -->
+</div>
+<!-- End bao cao su co-->
+<!-- Start khao sat nguoi benh-->
+
+<h4 class="py-3 fpt-pointer fw-bold" data-bs-toggle="collapse" href="#khaoSatNguoiBenhDashboardCollapse">
+  KHẢO SÁT NGƯỜI BỆNH
+  <i class="ms-2 fas fa-chevron-down"></i>
+</h4>
+<div class="row collapse show" id="khaoSatNguoiBenhDashboardCollapse">
+  <div class="col-xl-6 col-lg-12 mb-3">
+    <fpt-satified-patient></fpt-satified-patient>
+  </div>
+  <div class="col-xl-6 col-lg-12 mb-3">
+    <fpt-satified-patient-officers></fpt-satified-patient-officers>
+  </div>
+</div>
